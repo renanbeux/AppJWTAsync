@@ -5,10 +5,16 @@
              x:Class="AppJWTAsync.MainPage">
 
     <StackLayout>
-        <!-- Place new controls here -->
-    	<Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+        <StackLayout Orientation="Horizontal">
+            <Entry x:Name="nome"/>
+            <Entry x:Name="password"/>
+        </StackLayout>
+        <Button Text="GetToken" Clicked="GetTokenAction"/>
+        <Label x:Name="LblToken"/>
+
+        <Button Text="Verificar" Clicked="VerificarAction"/>
+        <Label x:Name="LblResultado"/>
+        
     </StackLayout>
 
 </ContentPage>
